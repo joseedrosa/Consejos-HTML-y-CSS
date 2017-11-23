@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>The web site of joseedrosa</title>
+    <!-- The style.css file allows you to change the look of your web pages.
+         If you include the next line in all your web pages, they will all share the same look.
+         This makes it easier to make new pages for your site. -->
+    <link href="/style.css" rel="stylesheet" type="text/css" media="all">
+    <title>Menu Desplegable</title>
+		<style type="text/css">
+		body {
+		  margin: 15px;
+		  background-color: black;
+		}
+		h1 {
+		  color: white;
+		}
+		h3{
+		  background-color: grey;
+		  color: black;
+		}
+		p {
+		  color: white;
+		}
+		ul {
+		  color: white;
+		}
+		#consejos {
+		  text-align: right;
+		}
+		#introduccion {
+		  background-color: red;
+		  color: white;
+		}
+		#estructura {
+		  background-color: red;
+		  color: white;
+		}
+		#etiquetas {
+		  background-color: red;
+		  color: white;
+		}
+		#elementos {
+		  background-color: red;
+		  color: white;
+		}
+		#introduccion2 {
+		  background-color: red;
+		  color: white;
+		}
+		#inclusion {
+		  background-color: red;
+		  color: white;
+		}
+		#selectores {
+		  background-color: red;
+		  color: white;
+		}
+		#modelo {
+		  background-color: red;
+		  color: white;
+		}
+		#posicionamiento {
+		  background-color: red;
+		  color: white;
+		}
+		
+			
+			* {
+				margin:0px;
+				padding:0px;
+			}
+			
+			#header {
+				margin:auto;
+				width:500px;
+				font-family:Arial, Helvetica, sans-serif;
+			}
+			
+			ul, ol {
+				list-style:none;
+			}
+			
+			.nav > li {
+				float:left;
+			}
+			
+			.nav li a {
+				background-color:#000;
+				color:#fff;
+				text-decoration:none;
+				padding:10px 12px;
+				display:block;
+			}
+			
+			.nav li a:hover {
+				background-color:#434343;
+			}
+			
+			.nav li ul {
+				display:none;
+				position:absolute;
+				min-width:140px;
+			}
+			
+			.nav li:hover > ul {
+				display:block;
+			}
+			
+			.nav li ul li {
+				position:relative;
+			}
+			
+			.nav li ul li ul {
+				right:-140px;
+				top:0px;
+			}
+			#img1 {
+			  border: 5px solid red;
+			}
+			#img2 {
+			  border: 5px solid red;
+			}
+			#img3 {
+			  border: 5px solid red;
+			}
+			#img4 {
+			  border: 5px solid red;
+			}
+			#img5 {
+			  border: 5px solid red;
+			}
+			#img6 {
+			  border: 5px solid red;
+			  left: 10px;
+			}
+			#img7 {
+			  border: 5px solid red;
+			  left: 20px;
+			}
+			#img8 {
+			  border: 5px solid red;
+			}
+			#img9 {
+			  border: 5px solid red;
+			}
+			#img10 {
+			  border: 5px solid red;
+			}
+			#img11 {
+			  border: 5px solid red;
+			}
+			#img12 {
+			  border: 5px solid red;
+			}
+			#img12 {
+			  border: 5px solid red;
+			}
+			#img13 {
+			  border: 5px solid red;
+			}
+			#img14 {
+			  border: 5px solid red;
+			}
+			#img15 {
+			  border: 5px solid red;
+			}
+			#img16 {
+			  border: 5px solid red;
+			}
+			#img17 {
+			  border: 5px solid red;
+			}
+			#img18 {
+			  border: 5px solid red;
+			}
+			th {
+			  border: red 3px solid;
+			  background-color: grey;
+			}
+			td {
+			  border: red 3px solid;
+			  background-color: grey;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="header">
+			<ul class="nav">
+				<li><a href="">Inicio</a></li>
+				<li><a href="">HTML</a>
+					<ul>
+						<li><a href="#introduccion">Introducción a HTML</a></li>
+						<li><a href="#estructura">Estructura básica de HTML</a></li>
+						<li><a href="#etiquetas">Etiquetas básicas</a></li>
+						<li><a href="#elementos">Elementos básicos HTML</a>
+						</ul>
+				</li>
+			<li><a href="">CSS</a>
+			<ul>
+						<li><a href="#introduccion2">Introducción a CSS</a></li>
+						<li><a href="#inclusion">Inclusión en el documento HTML</a></li>
+						<li><a href="#selectores">Selectores</a></li>
+						<li><a href="#modelo">Modelo de caja</a>
+            <li><a href="#posicionamiento">Posicionamiento</a>
+						</ul>
+			
+		</div>
+  </head>
+  <body>
+    <h1 id="consejos">Consejos sobre HTML y CSS</h1>
+    <ul>
+      <h2 id="introduccion"><strong>Introducción a HTML</strong></h2><br>
+      <h3>Premisas básicas</h3><br>
+      <p>Primero escribimos la dirección o URL del sitio web al que queremos entrar, a continuación y sin que nosotros nos demos cuenta, nuestro navegador solicita la página web al servidor que la alberga. 
+
+Acto seguido, el servidor envía de vuelta los datos a nuestro ordenador a través de Internet. Finalmente, nuestro navegador interpretará los datos, mostrando el resultado en la pantalla de nuestro ordenador.</p><br>
+<img id="img1" src="http://i.imgur.com/Nu8FU.png" width="600"><br>
+<p>Entrando más en detalle:</p><br>
+<p><ul>
+
+<li>-Nuestro ordenador de casa envía una petición al servidor y le devuelve una respuesta con los datos en lenguaje html.</li><br>
+
+
+<li>-A partir de aquí, el navegador que estemos utilizando interpretará esos datos y los mostrará en la pantalla.</li><br>
+
+
+<li>-Del mismo modo podemos obtener visualizaciones distintas para cada navegador debido a que son éstos los que interpretan los datos obtenidos.</li><br>
+
+
+<li>-Por ejemplo, podemos usar como navegador Internet Explorer o Firefox, y según usemos uno u otro obtener resultados distintos porque cada navegador interpreta la información de una manera distinta.</li><br>
+
+
+Estos son los navegadores más comunes:</p><br>
+<img id="img2" src="https://autopistadigital.files.wordpress.com/2013/07/navegadores1.jpg" width="400"><br>
+<h3>¿Qué es HTML y HTTP?</h3><br>
+<ul>
+<li><strong>-HTTP: servidor y cliente:</strong></li><br>
+<p>El http son las siglas de “Hypertext Transfer Protocol” es un protocolo de transferencia donde se utiliza un sistema mediante el cual se permite la transferencia de información entre diferentes servicios y los clientes que utilizan páginas web. Get Sent es una solicitud, que funciona escribiendo la palabra “Get” seguido del nombre de documento que quieras, que un usuario pide a un servidor para poder acceder a la página que desee y este le facilitará todo su código HTML.</p><br>
+<li><strong>-HTML:</strong></li><br>
+<p>Es un lenguaje de marcado que se utiliza para el desarrollo de páginas de Internet. Se trata de la sigla que corresponde a HyperText Markup Language, es decir, Lenguaje de Marcas de Hipertexto, que podría ser traducido como Lenguaje de Formato de Documentos para Hipertexto. Se encarga de desarrollar una descripción sobre los contenidos que aparecen como textos y sobre su estructura, complementando dicho texto con diversos objetos (como fotografías, animaciones, etc).</p><br>
+      <h2 id="estructura"><strong>Estructura básica de HTML</strong></h2><br>
+      <h3>Sintaxis básica</h3><br>
+      <ul>
+      <li><strong>-Elemento:</strong></li><br>
+      <p>Es el componente básico de una página web, una página web está compuesta por un conjunto de elementos escritos en un orden concreto. Un elemento se compone de una etiqueta inicial o de apertura, y una etiqueta final o de cierre. Hay más de 100 etiquetas, aqui te mostramos algunos ejemplos:</p><br>
+      </ul>
+      <p>
+      <table>
+      <thead>
+      <tr>
+      <th>Etiqueta</th>
+      <th>Descripción</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+      <td>< html>...< /html></td>
+      <td>Declara que la página web está escrita en HTML.</td>
+      </tr>
+      <tr>
+      <td>< head>...< /head></td>
+      <td>Delimita el encabezado de la página.</td>
+      </tr>
+      <tr>
+      <td>< title>...< /title></td>
+      <td>Define el título (no mostrado en la página).</td>
+      </tr>
+      <tr>
+      <td>< body>...< /body></td>
+      <td>Delimita el cuerpo de la página.</td>
+      </tr>
+      <tr>
+      <td>< p>...< /p></td>
+      <td>Empieza un párrafo.</td>
+      </tr>
+      </tbody>
+      </table>
+      </p>
+      <ul><br>
+      <li><strong>-Atributo:</strong></li><br>
+      <p>La etiqueta inicial puede llevar atributos, pero la final nunca lleva. En HTML, los atributos pueden llevar un valor.</p><br>
+      <li><strong>-Contenido:</strong></li><br>
+      <p>Es todo lo que se escriba entre la etiqueta inicial y final: el contenido puede estar formado por otras etiquetas de HTML o puede ser simplemente texto como en este ejemplo.</p><br>
+      <li><strong>-La etiqueta < html>:</strong></li><br>
+      <p>Es la etiqueta principal, sólo puede existir una y toda la página web debe escribirse entre la etiqueta inicial y final de html. La etiqueta head define la primera parte de una página web, la cabecera. Normalmente lo que se escribe en la cabecera no aparece representado en la página web cuando se visualiza en un navegador web, sino que se emplea para definir los metadatos, información sobre la página o instrucciones sobre cómo procesar la página web. 
+Dentro de la cabecera se puede escribir la etiqueta title que es obligatoria, sólo puede haber una, y se emplea para definir el título de la página. La etiqueta body define la segunda parte de una página web, el cuerpo. Lo que se escribe en el cuerpo sí que aparece representado en la página web cuando se visualiza en un navegador web.</p><br>
+<img id="img3" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img1.png" width="700">
+<li><strong>-< h1>, < h2> y hasta < h6>:</strong></li><br>
+<p>Se emplean para definir los encabezados o títulos en la página. 
+Existen seis niveles de importancia, siendo < h1> el más importante, y < h6> el nivel menos importante. Normalmente, usarás los niveles < h1>, < h2> y < h3>. p se emplea para definir un párrafo de texto. < strong>, se emplea para destacar un fragmento de texto importante. < em> se emplea para definir un texto enfatizado.</p><br>
+</ul>
+      <h2 id="etiquetas"><strong>Etiquetas básicas</strong></h2><br>
+      <p>Vamos a explicar conceptos básicos de HTML. 
+En primer lugar veremos cuál es la estructura básica que toda página HTML debe cumplir. Para ello introduciremos las etiquetas HTML, HEAD y BODY, y sus respectivas etiquetas de cierre. 
+Toda página web viene definida con la siguiente estructura básica:</p><br>
+<img id="img4" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img2.png" width="400"><br>
+<h3>HTML</h3><br>
+<p>La etiqueta < html> define que se trata de código HTML.</p><br>
+<h3>HEAD</h3><br>
+<p>La cabecera del documento es la sección comprendida entre < head> y < /head>. En ella se debe encontrar, obligatoriamente, el título (entre las etiquetas < title> y < /title>). 
+El título de la página debe describir su contenido 
+Otras etiquetas pueden ir incluidas en < Head> (son opcionales) y son las siguientes:</p><br>
+<ul>
+<li><strong>-< Style>:</strong></li><br>
+<p>Incluye estilos de CSS que permiten dotar de colores, bordes, imágenes de fondo, etc. a los elementos de la página web.</p><br>
+<li><strong>-< Meta>:</strong></li><br>
+<p>Sirven para incluir información que no se muestra como parte de la página web pero sirve para informar de características de la página web, como su descripción breve y sus palabras clave.</p><br>
+<li><strong>-< Link>:</strong></li><br>
+<p>La etiqueta < link>, permite realizar la carga y establecer la relación existente entre el documento web actual y un recurso externo. Esta etiqueta es normalmente muy utilizada para realizar la carga de hojas de estilo para el documento web. 
+Entre los atributos a destacar que tiene la etiqueta se encuentran: href (permite establecer URLs), hreflang (establece el lenguaje del documento), size (establece el tamaño del atributo) media (sirve para indicar el tipo de dispositivo para el cual se esta realizando el enlace.) entre otras.</p><br>
+<h3>BODY</h3><br>
+<p>El cuerpo (body) del documento html es normalmente lo más importante. Es aquí donde debemos colocar el contenido de nuestra página: texto, fotos, etc. 
+El cuerpo está delimitado por las etiquetas < body> y < /body>.</p><br>
+
+      <h2 id="elementos"><strong>Elementos básicos HTML</strong></h2><br>
+      <h3>Formatos de texto</h3><br>
+      <p>Las etiquetas que aparecen a continuación, se usan para dar formato al texto (negrita, cursiva, subrayado, tamaño...):</p><br>
+      <img id="img5" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img3.png" width="600"><br>
+      <p>A continuación se puede apreciar un ejemplo de uso de estas propiedades con sus respectivos significados:</p><br>
+      <img id="img6" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img4.png" width="500">
+      <img id="img7" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img5.png" width="400"><br>
+      <h3>Imágenes</h3><br>
+      <p>Las imágenes son uno de los elementos más importantes de las páginas web. 
+De hecho, prácticamente todas las páginas web contienen alguna imagen y la mayoría incluyen decenas de imágenes. 
+Las imágenes de contenido son las que proporcionan información y complementan la información textual. 
+Incluir imágenes en una página web es muy sencillo, simplemente debemos tener en cuenta que las imágenes tienen que tener los formatos GIF, JPG o PNG. Las imágenes dentro de una página web se incluyen utilizando la etiqueta < img>, que no tiene una etiqueta correspondiente de cierre. 
+
+Los atributos a emplear son los siguientes: </p><br>
+<img id="img8" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/img6.png" width="700"><br>
+<p>A continuación se puede ver un ejemplo del uso de estos atributos aplicados a una imagen:</p><br>
+<img id="img9" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Imagen%20Html.png
+" width="700">
+<img id="img10" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Giralda.png" width="700"><br>
+<h3>Enlaces</h3><br>
+<p>Uno de los elementos básicos a la hora de crear páginas web son los enlaces.Los enlaces son los elementos que nos permiten navegar por la web, es decir, ir a otras páginas de una misma web, o a páginas de webs externas.También podemos enlazar a diferentes partes de un mismo documento.El elemento utilizado para crear vínculos es < a> 
+
+Aquí tenemos un ejemplo:</p><br>
+<img id="img11" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/HTMl%20Hipervinculos%20.png" width="500">
+<img id="img12" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/HIperivnculos%201.png" width="515">
+<img id="img13" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Hipervinculos%202.png" width="700"><br>
+<ul>
+<li>< a> es la etiqueta enlace</li>
+<li>El atributo href nos indica hacia dónde apuntará nuestro enlace. En este caso, estamos enlazando a una página web externa.</li>
+<li>El valor del atributo href ha de ser la ruta del documento al que quiero enlazar.</li>
+<li>El texto marcado por la etiqueta a, en este caso "ir a google" será el hipervÍnculo sobre el que clicaremos para saltar a la página de Google.</li>
+<li>Por defecto, el texto se verá de color azul y subrayado.</li>
+</ul><br>
+<h3>Listas</h3><br>
+<p>En la mayoría de los documentos HTML se usan listas para organizar el texto. El lenguaje HTML incorpora distintas formas de mostrar listas, por ejemplo con viñetas sencillas o también con letras o números. Además, para que las páginas tengan más vistosidad, se pueden colocar imágenes delante de cada párrafo. 
+Las listas no ordenadas son aquellas que se encuentran entre las etiquetas < ul> y < /ul> (ul indica unordered list), etiqueta de apertura y cierre respectivamente. Si queremos añadir un nuevo punto, lo tendremos que hacer dentro de las etiquetas < li> y < /li>. Si no le indicamos nada a la etiqueta < li>, la viñeta o marca que indica que se trata de un elemento de una lista se generará de forma automática. 
+
+Aquí tenemos un ejemplo:</p><br>
+<img id="img14" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Listas1.png" width="500">
+<img id="img15" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Listas2.png" width="300"><br>
+<h3>Tablas</h3><br>
+<p>Las tablas pueden ser consideradas como un grupo de filas donde cada una de ellas contiene un grupo de celdas. Una tabla puede ser insertada en un documento HTML usando tres elementos básicos: el elemento TABLE (estructura contenedora principal), el elemento TR (contenedor de fila) y el elemento TD (celda). Cuando el contenido de una celda debe ser vacío, deberías usar una espacio en blanco (que en HTML se escribe como  ) como su contenido. Esto hará que tu página se visualice correctamente, ya que algunos navegadores tienen problemas representando celdas vacías. Ejemplo: < td> < /td> 
+
+Veamos un ejemplo. Crea un archivo ejemplo.html con este código y visualízalo: </p><br>
+
+<img id="img16" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Tabla1.png" width="500">
+<img id="img17" src="https://migran99.github.io/HTMLCSS4Dummies/web_server-final/fotos/Tabla2.png" width="500"><br>
+<h2 id="introduccion2"><strong>Introducción a CSS</strong></h2><br>
+<p>Las Hojas de Estilo en Cascada (Cascading Style Sheets) definen el formato o estilo para la presentación del documento.</p><br>
+<h2 id="inclusion"><strong>Inclusión en el documento HTML</strong></h2><br>
+<p>Las hojas de estilo se pueden incluir de las siguientes maneras:</p>
+<h3>Inline:</h3><br>
+<p>Dentro de la misma línea de código por lo que solo la afecta a ella. 
+En etiquetas mediante el atributo global style como en el ejemplo: 
+< p style="color red">Texto afectado< /p></p>
+<h3>Internal:</h3><br>
+<p>Dentro del HTML, afectándolo todo. 
+En la cabecera del documento mediante la etiqueta < style>: 
+< head> < style> hr{color red} < /style> < /head>
+</p>
+<h3>External</h3>
+<p>En un fichero independiente. < head> < link rel="stylesheet" href="css/fichero.css"/> < /head></p>
+<h2 id="selectores"><strong>Selectores</strong></h2><br>
+<p>Los selectores son las principales etiquetas de CSS. Los principales son:</p>
+<h3>Elemento:</h3><br>
+<p>Define el estilo para ese tipo de etiqueta. Ejemplo: 
+body{color:black}</p><br>
+<h3>Clases (class):</h3><br>
+<p>Estilo para las etiquetas cuyo atributo class tome ese valor. Ejemplo: 
+En CSS: 
+.centrado{text-align:center} 
+En HTML: 
+< p class="centrado">...< /p></p><br>
+<h3>Identificador (id):</h3><br>
+<p>Estilo a aplicar al elemento con ese identificador (atributo id). Ejemplo: 
+En CSS: 
+#rojo{color:red} 
+En HTML: 
+< p id="rojo">...< /p></p><br>
+<h2 id="modelo"><strong>Modelo de caja</strong></h2><br>
+<img id="img18" src="https://goo.gl/GD77Mn" width="500"> <br>
+<h3>Margen (margin):</h3><br>
+<p>Distancia que queremos que haya entre nuestro elemento y el resto de los elementos. Es invisible. 
+Si queremos que cada uno de los márgenes laterales sea diferente utilizamos: 
+
+-margin-top:10px 
+-margin-bottom:20px 
+-margin-left:30px 
+-margin-right:40px 
+
+Otra opción es escribir los cuatro valores en sentido horario por lo que los valores anteriores quedarían así: 
+margin:10px 40px 20px 30px 
+
+Para centrar el contenido de manera horizontal utilizamos margin:auto </p><br>
+<h3>Borde (border):</h3><br>
+<p>Línea que delimita nuestra caja. Podemos definir su color, grosor y modelo (están predeterminados como el "solid"). 
+
+Si queremos que cada uno de sus lados tenga un grosor diferente podemos diferenciarlos utilizando "border-top", "border-bottom", "border-left" y "border right".
+
+border:20px solid rgb(23,35,67)</p><br>
+<h3>Relleno (padding):</h3><br>
+<p>Distancia entre el borde y la letra: 
+
+padding:20px </p><br>
+<h3>Contenido:</h3><br>
+<p>La información.</p><br>
+<h2 id="posicionamiento"><strong>Posicionamiento</strong></h2><br>
+<p>Utilizando el modelo de caja, podemos colocar la información en la posición que más nos convenga. Estos son los tipos de posicionamiento de los que disponemos:</p><br>
+<h3>Posicionamiento fijo</h3><br>
+<p>Independientemente del tipo de posicionamiento fijo, disponemos de estos cuantro valores:
+<ul>
+<li>-top:valor</li>
+<li>-bottom:valor</li>
+<li>-right:valor</li>
+<li>-left:valor</li>
+</ul><br>
+NOTA:no es necesario utilizarlos todos, solo los que nos hagan falta para colocar la caja donde queramos.
+<ul>
+<li>-Relativa(position:relative):Posicionamos el elemento con respecto al flujo normal de la página; es decir, con respecto al lugar que por defecto le correspondería.</li><br>
+<li>-Absoluta(position:absolute):Posicionamos el elemento tomando como referencia la ventana del navegador o el elemento posicionado (que tenga cualquier valor de position) más cercano si es padre del elemento que queremos posicionar.</li><br>
+</ul>
+</p>
+<h3>Posicionamiento flotante</h3><br>
+<p>
+<ul>
+<li><strong>Float:</strong></li><br>
+<p>Aplicable a left y right, hace que el elemento pierda el flujo normal de ubicación y se coloque a la derecha o a la izquierda del contenedor, ocupando el resto de elementos del espacio. Es decir, el elemento con float se colocará por encima de todo lo demás. 
+
+float:left</p><br> 
+<li><strong>Clear:</strong></li><br>
+Aplicable a izquierda, derecha o ambos, impide que un elemento flote, a izquierda o derecha, sobre él. 
+
+clear:both
+</p>
+  </body>
+</html>
